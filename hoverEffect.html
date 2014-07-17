@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+  body{
+    background-color: #000;
+  }
+  .header{
+    height: 80px;
+    background-color: white;
+  }
+  .title{
+    color: #000;
+    font-size: 30px;
+    line-height: 80px;
+    margin-left: 25px;
+  }
+  .contain{
+    margin-top: 20px;
+  }
+  .content{
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .item{
+    width: 480px;
+    height: 300px;
+    background-color: #F8C9E1;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  .item:before{
+    content: "";
+    width: 480px;
+    height: 300px;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+  }
+  .effect1:before{
+    top: 300px;
+    left: 0;
+    opacity: 0;
+    transition: 0.2s;
+  }
+  .effect1:hover:before{
+    top: 0;
+    opacity: 1;
+    transition: 0.4s 0.1s;
+  }
+  .effect1 p{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    font-size: 30px;
+    margin: 30px;
+    color: white;
+    opacity: 0;
+  }
+  .effect1 span{
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    margin: 30px;
+    color: white;
+    opacity: 0;
+  }
+  .effect1:hover p, .effect1:hover span{
+    opacity: 1;
+    transition: 0.1s 0.3s;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <p class="title">Hover Effect</p>
+  </div>
+  <div class="contain">
+    <div class="content">
+      <div class="item effect1"><img src="images/01.jpg" height="300" width="480"><p>小胖子</p><span>2013.10.23</span></div>
+      <div class="item effect2"><img src="images/02.jpg" height="300" width="480"></div>
+      <div class="item effect3"><img src="images/03.jpg" height="300" width="480"></div>
+      <div class="item effect4"><img src="images/04.jpg" height="300" width="480"></div>
+      <div class="item effect5"><img src="images/05.jpg" height="300" width="480"></div>
+      <div class="item effect6"><img src="images/06.jpg" height="300" width="480"></div>
+    </div>
+  </div>
+</body>
+<script src="jquery-1.11.1.js"></script>
+<script>
+
+</script>
+</html>
