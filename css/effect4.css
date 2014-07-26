@@ -1,0 +1,23 @@
+.effect4{
+	
+}
+.effect4::before{
+	content: "";
+	width: 480px;
+	height: 300px;
+	background-color: black;
+	opacity: .7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-moz-transform-origin: 50% 0% 0px;
+	-moz-transform: perspective(300px) rotate3D(1,0,0,-90deg);
+	-webkit-transform-origin: 50% 0% 0px;
+	-webkit-transform: perspective(300px) rotate3D(1,0,0,-90deg);
+	transition: 0.5s ease;
+}
+.effect4:hover::before{
+	-moz-transform: rotate3D(1,0,0,0deg);
+	-webkit-transform: rotate3D(1,0,0,0deg);
+	transition: 0.7s cubic-bezier(.6,2.5,.7,.7) 0.2s;
+}
