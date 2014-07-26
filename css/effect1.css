@@ -1,4 +1,4 @@
-.effect1:before{
+.effect1::before{
     content: "";
     width: 480px;
     height: 300px;
@@ -9,10 +9,10 @@
     opacity: 0;
     transition: 0.2s;
   }
-  .effect1:hover:before{
+  .effect1:hover::before{
     top: 0;
     opacity: 1;
-    transition: 0.4s 0.1s;
+    transition: all 0.4s cubic-bezier(.5,2,.8,0.7) 0.1s;
   }
   .effect1 p{
     position: absolute;
