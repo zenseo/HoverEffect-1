@@ -17,17 +17,15 @@
   .effect1 p{
     position: absolute;
     bottom: 30px;
-    left: 0;
+    left: 30px;
     font-size: 30px;
-    margin: 30px;
     color: white;
     opacity: 0;
   }
   .effect1 span{
     position: absolute;
-    bottom: 25px;
-    right: 0;
-    margin: 30px;
+    bottom: 30px;
+    left: 150px;
     color: white;
     opacity: 0;
   }

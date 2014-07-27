@@ -1,70 +1,89 @@
-  .effect5{
-    background-image: url(../images/05.jpg);
-    background-size: 480px 300px;
-    overflow: hidden;
-  }
-  .effect5 span{
-    left: 0;
-    width: 120px;
-    height: 300px;
-    background-color: rgba(0,0,0,0.7);
-    display: block;
-    position: absolute;
-  }
-  .effect5:hover span{
-    
-  }
-  .effect5 span::before{
-    content: "";
-    width: 20px;
-    position: relative;
-    left: 0px;
-    background-color: white;
-  }
-  .effect5 span{
-    -moz-transform-origin: 30% 50% 0px;
-    -moz-transform: perspective(300px) rotate3D(0,1,0,60deg);
-    -webkit-transform-origin: 30% 50% 0px;
-    -webkit-transform: perspective(300px) rotate3D(0,1,0,60deg);
-  }
-  .effect5 span:nth-child(1){
-    left: -120px;
-    transition: left 0.2s 0.4s linear, transform 0.2s 0.1s linear;
-  }
-  .effect5 span:nth-child(2){
-    left: -120px;
-    transition: left 0.3s 0.4s linear, transform 0.2s 0.1s linear;
-  }
-  .effect5 span:nth-child(3){
-    left: -120px;
-    transition: left 0.4s 0.4s linear, transform 0.2s 0.1s linear;
-  }
-  .effect5 span:nth-child(4){
-    left: -120px;
-    transition: left 0.5s 0.4s linear, transform 0.2s 0.1s linear;
-  }
+.effect5{
+  background-image: url(../images/05.jpg);
+  background-size: 480px 300px;
+  overflow: hidden;
+}
+.effect5 span{
+  left: 0;
+  width: 120px;
+  height: 300px;
+  background-color: rgba(0,0,0,0.7);
+  display: block;
+  position: absolute;
+}
+.effect5:hover span{
+  
+}
+.effect5 span::before{
+  content: "";
+  width: 20px;
+  position: relative;
+  left: 0px;
+  background-color: white;
+}
+.effect5 span{
+  -moz-transform-origin: 30% 50% 0px;
+  -moz-transform: perspective(300px) rotate3D(0,1,0,60deg);
+  -webkit-transform-origin: 30% 50% 0px;
+  -webkit-transform: perspective(300px) rotate3D(0,1,0,60deg);
+}
+.effect5 span:nth-child(1){
+  left: -120px;
+  transition: left 0.2s 0.4s linear, transform 0.2s 0.1s linear;
+}
+.effect5 span:nth-child(2){
+  left: -120px;
+  transition: left 0.3s 0.4s linear, transform 0.2s 0.1s linear;
+}
+.effect5 span:nth-child(3){
+  left: -120px;
+  transition: left 0.4s 0.4s linear, transform 0.2s 0.1s linear;
+}
+.effect5 span:nth-child(4){
+  left: -120px;
+  transition: left 0.5s 0.4s linear, transform 0.2s 0.1s linear;
+}
 
-  .effect5:hover span:nth-child(1){
-    left: 0;
-    -moz-transform: rotate3D(0,1,0,0deg);
-    -webkit-transform: rotate3D(0,1,0,0deg);
-    transition: left 0.2s 0.1s linear, transform 0.3s 0.7s linear;
-  }
-  .effect5:hover span:nth-child(2){
-    left: 120px;
-    -moz-transform: rotate3D(0,1,0,0deg);
-    -webkit-transform: rotate3D(0,1,0,0deg);
-    transition: left 0.3s 0.1s linear, transform 0.3s 0.7s linear;
-  }
-  .effect5:hover span:nth-child(3){
-    left: 240px;
-    -moz-transform: rotate3D(0,1,0,0deg);
-    -webkit-transform: rotate3D(0,1,0,0deg);
-    transition: left 0.4s 0.1s linear, transform 0.3s 0.7s linear;
-  }
-  .effect5:hover span:nth-child(4){
-    left: 360px;
-    -moz-transform: rotate3D(0,1,0,0deg);
-    -webkit-transform: rotate3D(0,1,0,0deg);
-    transition: left 0.5s 0.1s linear, transform 0.3s 0.7s linear;
-  }
+.effect5:hover span:nth-child(1){
+  left: 0;
+  -moz-transform: rotate3D(0,1,0,0deg);
+  -webkit-transform: rotate3D(0,1,0,0deg);
+  transition: left 0.2s 0.1s linear, transform 0.3s 0.7s linear;
+}
+.effect5:hover span:nth-child(2){
+  left: 120px;
+  -moz-transform: rotate3D(0,1,0,0deg);
+  -webkit-transform: rotate3D(0,1,0,0deg);
+  transition: left 0.3s 0.1s linear, transform 0.3s 0.7s linear;
+}
+.effect5:hover span:nth-child(3){
+  left: 240px;
+  -moz-transform: rotate3D(0,1,0,0deg);
+  -webkit-transform: rotate3D(0,1,0,0deg);
+  transition: left 0.4s 0.1s linear, transform 0.3s 0.7s linear;
+}
+.effect5:hover span:nth-child(4){
+  left: 360px;
+  -moz-transform: rotate3D(0,1,0,0deg);
+  -webkit-transform: rotate3D(0,1,0,0deg);
+  transition: left 0.5s 0.1s linear, transform 0.3s 0.7s linear;
+}
+.effect5 p:nth-child(5){
+  position: absolute;
+  left: 60px;
+  bottom: 72px;
+  color: white;
+  font-size: 30px;
+  opacity: 0;
+}
+.effect5 p+p{
+  position: absolute;
+  left: 70px;
+  bottom: 50px;
+  color: white;
+  opacity: 0;
+}
+.effect5:hover p, .effect5:hover p+p{
+  opacity: 1;
+  transition: 0.2s 0.8s;
+}

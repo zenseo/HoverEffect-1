@@ -21,3 +21,22 @@
 	-webkit-transform: rotate3D(1,0,0,0deg);
 	transition: 0.7s cubic-bezier(.6,2.5,.7,.7) 0.2s;
 }
+.effect4 p{
+	position: absolute;
+	left: 60px;
+	bottom: 82px;
+	color: white;
+	font-size: 30px;
+	opacity: 0;
+}
+.effect4 span{
+	position: absolute;
+	left: 100px;
+	bottom: 60px;
+	color: white;
+	opacity: 0;
+}
+.effect4:hover p, .effect4:hover span{
+	opacity: 1;
+	transition: 0.2s 0.9s;
+}

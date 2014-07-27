@@ -17,3 +17,22 @@
   height: 300px;
   transition: width 0.3s 0.1s, height 0.5s cubic-bezier(.5,1.9,.6,.5) 0.5s;
 }
+.effect6 p{
+  position: absolute;
+  left: 60px;
+  bottom: 52px;
+  color: black;
+  font-size: 30px;
+  opacity: 0;
+}
+.effect6 span{
+  position: absolute;
+  left: 70px;
+  bottom: 30px;
+  color: black;
+  opacity: 0;
+}
+.effect6:hover p, .effect6:hover span{
+  opacity: 1;
+  transition: 0.2s 0.7s;
+}
