@@ -1,0 +1,41 @@
+.effect2{
+  overflow: hidden;
+}
+.effect2::before{
+  content: "";
+  width: 1000px;
+  height: 450px;
+  background-color: white;
+  -moz-transform-origin: 50% 50% 0;
+  -moz-transform: rotate(45deg);
+  position: absolute;
+  left: -3000px;
+  top: -75px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.effect2:hover::before{
+  opacity: 0.7;
+  left: -205px;
+  top: -30px;
+  transition: 0.5s cubic-bezier(.2,0.7,.6,1.2) 0.2s;
+}
+.effect2 p{
+  position: absolute;
+  left: 40px;
+  top: 22px;
+  color: black;
+  font-size: 30px;
+  opacity: 0;
+}
+.effect2 span{
+  position: absolute;
+  left: 70px;
+  top: 55px;
+  color: black;
+  opacity: 0;
+}
+.effect2:hover p, .effect2:hover span{
+  opacity: 1;
+  transition: 0.2s 0.7s;
+}
