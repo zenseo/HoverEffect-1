@@ -8,6 +8,8 @@
   background-color: white;
   -moz-transform-origin: 50% 50% 0;
   -moz-transform: rotate(45deg);
+  -webkit-transform-origin: 50% 50% 0;
+  -webkit-transform: rotate(45deg);
   position: absolute;
   left: -3000px;
   top: -75px;
